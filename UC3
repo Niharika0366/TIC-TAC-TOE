@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class UserInputUC3 {
+
+    // Method to get slot input from user
+    public static int getSlotInput() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a slot number (1-9): ");
+        int slot = scanner.nextInt();   // Read integer input
+
+        return slot;  // Return the entered value
+    }
+
+    public static void main(String[] args) {
+        int selectedSlot = getSlotInput();  // Method call
+
+        System.out.println("You selected slot: " + selectedSlot);
+    }
+}
